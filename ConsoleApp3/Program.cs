@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 //①
+using System.Net;
+
 int num1 = 1;
 if (num1 % 2  == 0)
 {
@@ -46,4 +48,28 @@ bool student = true;
 if ((age >= 18) && (student))
 {
     Console.WriteLine("学生割引が適用されます");
+}
+
+//④
+string LoginID = "admin";
+string Password = "password123";
+if ((LoginID == "admin") && (Password == "password123"))
+{
+    Console.WriteLine("ログイン成功");
+}
+else Console.WriteLine("ログイン失敗");
+
+//⑤
+int Score = 90;
+if ((Score >= 80) && (Score <= 100))
+{
+    Console.WriteLine("優秀");
+}
+if ((Score < 80) && (Score >= 60))
+{
+    Console.WriteLine("合格");
+}
+if (Score < 60)
+{
+    Console.WriteLine("不合格");
 }
