@@ -53,7 +53,7 @@ if ((age >= 18) && (student))
 //④
 string LoginID = "admin";
 string Password = "password123";
-if ((LoginID == "admin") && (Password == "password123"))
+if ((LoginID == "admin") || (Password == "password123"))
 {
     Console.WriteLine("ログイン成功");
 }
@@ -65,11 +65,8 @@ if ((Score >= 80) && (Score <= 100))
 {
     Console.WriteLine("優秀");
 }
-if ((Score < 80) && (Score >= 60))
+else if ((Score < 80) && (Score >= 60))
 {
     Console.WriteLine("合格");
 }
-if (Score < 60)
-{
-    Console.WriteLine("不合格");
-}
+else Console.WriteLine("不合格");
